@@ -1,0 +1,14 @@
+.product-slider {
+  height: 37.4rem;
+  .container {
+    position: relative;
+  }
+  .white-background {
+    position: absolute;
+    top: -6rem;
+    background-color: $white;
+    padding: 2.8rem 0rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}

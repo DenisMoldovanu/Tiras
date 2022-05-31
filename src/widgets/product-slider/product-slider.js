@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  $(".column-slider .slider-item").each(function (i) {
-    var swiperColumnSlider = new Swiper($(this).find(".swiper-container"), {
-      slidesPerView: 3,
-      spaceBetween: 30,
+  $(".product-slider .slider-item").each(function (i) {
+    var swiperProductSlider = new Swiper($(this).find(".swiper-container"), {
+      slidesPerView: 4,
+      spaceBetween: 10,
       centeredSlides: false,
-      loop: true,
+      loop: false,
       speed: 900,
       allowTouchMove: true,
       slideToClickedSlide: false,
@@ -22,8 +22,8 @@ $(document).ready(function () {
       },
       breakpoints: {
         992: {
-          slidesPerView: 3,
-          spaceBetween: 30,
+          slidesPerView: 4,
+          spaceBetween: 0,
         },
         768: {
           slidesPerView: 3,
