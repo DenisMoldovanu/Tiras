@@ -1,0 +1,432 @@
+<div
+  data-component-key="filtered-features"
+  class="filtered-features card-listing-filter-slider"
+  style="background-image: url('img/explore-bk.jpg')"
+>
+  <div class="content-block">
+    <div class="container container-sm">
+      <div class="row">
+        <div class="col-sm-12 title-block">
+          <h2 class="h3 bottom-border sm-width">Explore Programs</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-filters-block layout-column">
+      <!-- filters on desktop -->
+      <div class="container container-sm">
+        <div class="row">
+          <div class="col-sm-12">
+            <form
+              action=""
+              class="card-filters layout-row flex-wrap hidden-xs hidden-sm"
+            >
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="dept" id="">
+                    <option value="*">All</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="location" id="">
+                    <option value="*">Location</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custon-input">
+                  <select name="sports">
+                    <option value="*">Sports</option>
+                    <option value=".volleyball">Volleyball</option>
+                    <option value=".football">Football</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="academy" id="">
+                    <option value="*">Academy</option>
+                    <option value=".academy1">Academy 1</option>
+                    <option value=".academy2">Academy 2</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="camp" id="">
+                    <option value="*">Camps</option>
+                    <option value=".camp1">Camp 1</option>
+                    <option value=".camp2">Camp 2</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="performance" id="">
+                    <option value="*">Performance</option>
+                    <option value=".performance1">Performance 1</option>
+                    <option value=".performance2">Performance 2</option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="card-filter">
+                <fieldset class="custom-input">
+                  <select name="rehabilitation" id="">
+                    <option value="*">Rehabilitation</option>
+                    <option value=".rehabilitation1">Rehabilitation 1</option>
+                    <option value=".rehabilitation2">Rehabilitation 2</option>
+                  </select>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- end filters on desktop -->
+
+      <!-- filter on mobile/tablet only -->
+      <div class="mobile-filter-btn light-btn visible-xs visible-sm">
+        <button
+          class="button black-btn no-scroll"
+          href="javascript:;"
+          aria-label="Filter Events"
+        >
+          <span>Filter Events</span>
+          <svg>
+            <use xlink:href="svg/sprite.svg#filter-icon-white"></use>
+          </svg>
+        </button>
+
+        <div class="filter-message">
+          <div class="btn-wrapper">
+            <button class="button">
+              <svg>
+                <use xlink:href="svg/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="filter-title">
+            <p>Filter by</p>
+          </div>
+
+          <form action="">
+            <div class="dropdown-items">
+              <div class="select-item">
+                <label class="sr-only" for="upcomingEventsAll">
+                  Upcoming events all
+                </label>
+                <select name="upcomingEventsAll" id="upcomingEventsAll">
+                  <option value="All">All</option>
+                  <option value="Option 1">All 1</option>
+                  <option value="Option 2">All 2</option>
+                  <option value="Option 3">All 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectLocation">
+                  Select Location
+                </label>
+                <select name="selectLocation" id="selectLocation">
+                  <option value="Location">Location</option>
+                  <option value="Location 1">Location 1</option>
+                  <option value="Location 2">Location 2</option>
+                  <option value="Location 3">Location 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectSports">
+                  Select Sports
+                </label>
+                <select name="selectSports" id="selectSports">
+                  <option value="Sports">Sports</option>
+                  <option value="Sports 1">Sports 1</option>
+                  <option value="Sports 2">Sports 2</option>
+                  <option value="Sports 3">Sports 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectAcademy">
+                  Select Academy
+                </label>
+                <select name="selectAcademy" id="selectAcademy">
+                  <option value="Academy">Academy</option>
+                  <option value="Academy 1">Academy 1</option>
+                  <option value="Academy 2">Academy 2</option>
+                  <option value="Academy 3">Academy 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectCamps"> Select Camps </label>
+                <select name="selectCamps" id="selectCamps">
+                  <option value="Camps">Camps</option>
+                  <option value="Camps 1">Camps 1</option>
+                  <option value="Camps 2">Camps 2</option>
+                  <option value="Camps 3">Camps 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectPerformance">
+                  Select Performance
+                </label>
+                <select name="selectPerformance" id="selectPerformance">
+                  <option value="Performance">Performance</option>
+                  <option value="Performance 1">Performance 1</option>
+                  <option value="Performance 2">Performance 2</option>
+                  <option value="Performance 3">Performance 3</option>
+                </select>
+              </div>
+
+              <div class="select-item">
+                <label class="sr-only" for="selectRehabilitation">
+                  Select Rehabilitation
+                </label>
+                <select name="selectRehabilitation" id="selectRehabilitation">
+                  <option value="Rehabilitation">Rehabilitation</option>
+                  <option value="Rehabilitation 1">Rehabilitation 1</option>
+                  <option value="Rehabilitation 2">Rehabilitation 2</option>
+                  <option value="Rehabilitation 3">Rehabilitation 3</option>
+                </select>
+              </div>
+
+              <a href="javascript:;" aria-label="Questions">Questions</a>
+            </div>
+
+            <div class="btn-apply-wrapper">
+              <button class="btn-apply" type="submit">
+                Apply (<span class="filter-selected">0</span>)
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end filter on mobile/tablet only -->
+
+      <div class="card-listing card-listing-filters">
+        <div class="row">
+          <div class="results-block col-sm-12">
+            <div class="no-item container container-sm">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p>There are no matching results</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper layout-row card-grid">
+                <!-- slider item 1-->
+                <a
+                  href="javascript:;"
+                  class="swiper-slide card-item grid-item dept-sport-program-1 camp2 performance1 loc-cape-town-south-africa year-2012 volleyball academy1"
+                  data-dept="Sport Program 1"
+                  data-location="Cape Town, South Africa"
+                  aria-label="Academy"
+                >
+                  <span class="slider">
+                    <svg class="icon custom-icon">
+                      <use xlink:href="svg/sprite.svg#e-learning-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Academy</span>
+                    <span class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Elit cras phasellus nulla eget. Molestie tortor commodo
+                      quam porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Academies</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- slider item 2-->
+                <a
+                  href="javascript:;"
+                  aria-label="Performance"
+                  class="swiper-slide card-item grid-item dept-sport-program-2 camp1 loc-eldoret-kenya year-2016 football academy1 rehabilitation1"
+                  data-dept="Sport Program 2"
+                  data-location="Eldoret, Kenya"
+                >
+                  <span class="slider">
+                    <svg class="icon icon-default">
+                      <use xlink:href="svg/sprite.svg#performance-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Performance</span>
+                    <span class="text">
+                      Football Program 2 eldoret consectetur adipiscing elit.
+                      Elit cras phasellus nulla eget. Molestie tortor commodo
+                      quam porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Performance</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- slider item 3-->
+                <a
+                  href="javascript:;"
+                  aria-label="Health"
+                  class="swiper-slide card-item grid-item dept-sport-program-2 camp2 football loc-moshi-tanzania academy2"
+                  data-dept="Sport Program 2"
+                  data-location="Moshi, Tanzania"
+                >
+                  <span class="slider">
+                    <svg class="icon icon-default">
+                      <use xlink:href="svg/sprite.svg#medical-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Health</span>
+                    <span class="text">
+                      Program 2 moshi football consectetur adipiscing elit. Elit
+                      cras phasellus nulla eget. Molestie tortor commodo quam
+                      porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Health</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- slider item 4-->
+                <a
+                  href="javascript:;"
+                  aria-label="Facilities"
+                  class="swiper-slide card-item grid-item dept-sport-program-2 camp2 volleyball performance2 loc-moshi-tanzania"
+                  data-dept="Sport Program 2"
+                  data-location="Moshi, Tanzania"
+                >
+                  <span class="slider">
+                    <svg class="icon icon-default">
+                      <use xlink:href="svg/sprite.svg#sports-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Facilities</span>
+                    <span class="text">
+                      Program 2 moshi volleyball, consectetur adipiscing elit.
+                      Elit cras phasellus nulla eget. Molestie tortor commodo
+                      quam porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Facilities</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- slider item 5-->
+                <a
+                  href="javascript:;"
+                  aria-label="Facilities new"
+                  class="swiper-slide card-item grid-item dept-sport-program-2 camp2 volleyball performance2 loc-moshi-tanzania"
+                  data-dept="Sport Program 2"
+                  data-location="Moshi, Tanzania"
+                >
+                  <span class="slider">
+                    <svg class="icon icon-default">
+                      <use xlink:href="svg/sprite.svg#sports-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Facilities new</span>
+                    <span class="text">
+                      Program 2 moshi volleyball, consectetur adipiscing elit.
+                      Elit cras phasellus nulla eget. Molestie tortor commodo
+                      quam porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Facilities</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+
+                <!-- slider item 6-->
+                <a
+                  href="javascript:;"
+                  aria-label="Performance new"
+                  class="swiper-slide card-item grid-item dept-sport-program-2 camp1 loc-eldoret-kenya year-2016 football academy1 rehabilitation1"
+                  data-dept="Sport Program 2"
+                  data-location="Eldoret, Kenya"
+                >
+                  <span class="slider">
+                    <svg class="icon icon-default">
+                      <use xlink:href="svg/sprite.svg#performance-icon"></use>
+                    </svg>
+                    <span class="tag-item">Location</span>
+                    <span class="h3">Performance new</span>
+                    <span class="text">
+                      Football Program 2 eldoret consectetur adipiscing elit.
+                      Elit cras phasellus nulla eget. Molestie tortor commodo
+                      quam porttitor.
+                    </span>
+                    <span class="link-item">
+                      <span>Performance</span>
+                      <svg>
+                        <use
+                          xlink:href="svg/sprite.svg#arrow-right-small"
+                        ></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="custom-slider-navs">
+              <button
+                type="button"
+                class="custom-slider-nav custom-slider-nav--prev"
+              >
+                <svg>
+                  <use xlink:href="svg/sprite.svg#left-slider-arrow"></use>
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="custom-slider-nav custom-slider-nav--next"
+              >
+                <svg>
+                  <use xlink:href="svg/sprite.svg#right-slider-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

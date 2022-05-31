@@ -1,0 +1,252 @@
+@@include('./templates/common/top.html')
+@@include('./templates/common/main-header.html')
+
+<!-- theme color class: theme-1, theme-2, theme-3 -->
+<!-- if homepage (homepage class) hide breadcrumbs -->
+<div class="theme-3">
+  <!-- widgets -->
+  @@include('./widgets/navigation-block/navigation-block.html')
+  <div data-component-key="blog-author" class="blog-author">
+    <div class="container">
+      <div class="row row-item">
+        <div class="box-content text-content col-sm-12 col-md-12 col-lg-8">
+          <div class="author-block">
+            <div class="author-profile">
+              <picture>
+                <source media="(min-width: 768px)" srcset="" />
+                <source media="(max-width: 767px)" srcset="" />
+                <img src="img/profile-author.jpg" alt="" />
+              </picture>
+              <div class="author-info">
+                <h3 class="bottom-border">Jenny Newall</h3>
+                <span class="author-proffesion"
+                  >Certified Sports Nutritionist</span
+                >
+              </div>
+            </div>
+            <span class="author-about"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              purus nunc dui a eu pellentesque lacus, a sed. Convallis
+              pellentesque odio vestibulum ac elit risus amet sed.</span
+            >
+            <a
+              class="link-item visible-sm"
+              href="javascript:;"
+              aria-label="Read more"
+            >
+              <span>Read more</span>
+              <svg>
+                <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="mobile-links"></div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-4 info-wrapper">
+          <!-- Author block -->
+          <div class="related-authors-widget">
+            <div class="author-block">
+              <p>Related authors</p>
+              <div class="author-profile">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(max-width: 767px)" srcset="" />
+                  <img src="img/author-profile.jpg" alt="" />
+                </picture>
+                <div class="author-info">
+                  <span class="author-name">Jenny Newall</span>
+                  <span class="author-proffesion"
+                    >Certified Sports Nutritionist</span
+                  >
+                  <a
+                    class="link-item"
+                    href="javascript:;"
+                    aria-label="Read more"
+                  >
+                    <span>Read more</span>
+                    <svg>
+                      <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="author-block">
+              <div class="author-profile">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="" />
+                  <source media="(max-width: 767px)" srcset="" />
+                  <img src="img/author-profile.jpg" alt="" />
+                </picture>
+                <div class="author-info">
+                  <span class="author-name">Jenny Newall</span>
+                  <span class="author-proffesion"
+                    >Certified Sports Nutritionist</span
+                  >
+                  <a
+                    class="link-item"
+                    href="javascript:;"
+                    aria-label="Read more"
+                  >
+                    <span>Read more</span>
+                    <svg>
+                      <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- filtered-blog widget with small copy change -->
+    <div data-component-key="filtered-blog" class="filtered-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Author's Posts</p>
+            <div class="filters-items layout-row">
+              <div class="swiper-container">
+                <div class="swiper-wrapper button-group" id="filters" data-filter-group="category">
+                  <!-- <div class="swiper-slide">
+                    <button class="button-tag is-checked" data-filter="*">Show All</button>
+                  </div> -->
+
+                  <div class="swiper-slide">
+                    <div class="element-item diet" data-category="diet">
+                      <div class="img-block relative">
+                        <div class="block-wrapper">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="" />
+                            <source media="(max-width: 767px)" srcset="" />
+                            <img src="img/topic4.jpg" alt="" />
+                          </picture>
+                        </div>
+
+                        <div class="tags-block">
+                          <a class="tag-item" href="javascript:;" aria-label="Nutrition">Nutrition</a>
+                        </div>
+                      </div>
+
+                      <div class="content-block layout-column">
+                        <div class="box-wrapper">
+                          <span>
+                            Lorem ipsum dolor sit amet, con sectetur adipiscing
+                            elit. Consectetur scelerisque a habitasse porttitor.
+                          </span>
+                        </div>
+
+                        <div class="links-block layout-row justify-content-between">
+                          <a class="link-item" href="javascript:;" aria-label="Read more">
+                            <span>Read more</span>
+                            <svg>
+                              <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="element-item meal-preparation" data-category="meal-preparation">
+                      <div class="img-block relative">
+                        <div class="block-wrapper">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="" />
+                            <source media="(max-width: 767px)" srcset="" />
+                            <img src="img/topic7.jpg" alt="" />
+                          </picture>
+                        </div>
+
+                        <div class="tags-block">
+                          <a class="tag-item" href="javascript:;" aria-label="meal preparation">Nutrition</a>
+                        </div>
+                      </div>
+
+                      <div class="content-block layout-column">
+                        <div class="box-wrapper">
+                          <span>
+                            Lorem ipsum dolor sit amet, con sectetur adipiscing
+                            elit. Consectetur scelerisque a habitasse porttitor.
+                          </span>
+                        </div>
+
+                        <div class="links-block layout-row justify-content-between">
+                          <a class="link-item" href="javascript:;" aria-label="Read more">
+                            <span>Read more</span>
+                            <svg>
+                              <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="element-item diet" data-category="diet">
+                      <div class="img-block relative">
+                        <div class="block-wrapper">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="" />
+                            <source media="(max-width: 767px)" srcset="" />
+                            <img src="img/topic5.jpg" alt="" />
+                          </picture>
+                        </div>
+
+                        <div class="tags-block">
+                          <a class="tag-item" href="javascript:;" aria-label="Nutrition">Nutrition</a>
+                        </div>
+                      </div>
+
+                      <div class="content-block layout-column">
+                        <div class="box-wrapper">
+                          <span>
+                            Lorem ipsum dolor sit amet, con sectetur adipiscing
+                            elit. Consectetur scelerisque a habitasse porttitor.
+                          </span>
+                        </div>
+
+                        <div class="links-block layout-row justify-content-between">
+                          <a class="link-item" href="javascript:;" aria-label="Read more">
+                            <span>Read more</span>
+                            <svg>
+                              <use xlink:href="svg/sprite.svg#arrow-right-small"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination visible-xs visible-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end filtered-blog widget -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="mobile-topics"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer include -->
+  @@include('./templates/common/main-footer.html')
+
+  <!-- end widgets -->
+</div>
+
+@@include('./templates/common/bottom.html')
+

@@ -1,0 +1,153 @@
+.four-block-module {
+  margin-bottom: 10.8rem;
+  @include respondto(phone) {
+    margin-bottom: 3.4rem;
+  }
+
+  .box-wrapper {
+    @include respondto(phone) {
+      padding: 0rem !important;
+    }
+  }
+  .box-content {
+    h3 {
+      font-size: 3.2rem;
+      font-family: $font-secondary;
+      text-transform: initial;
+    }
+    p {
+      font-size: 2.1rem;
+      line-height: 140%;
+    }
+
+    @include respondto(phone) {
+      padding-left: 2.5rem !important;
+    }
+  }
+  .text-content {
+    margin-right: 10rem;
+
+    @include respondto(maxTablet) {
+      margin-right: 0rem;
+    }
+    @include respondto(phone) {
+      padding: 0rem 2.5rem !important;
+    }
+  }
+  .left-pad {
+    padding-left: 0rem !important;
+
+    h2 {
+      font-size: 3.4rem;
+      line-height: 4rem;
+
+      @include respondto(maxTablet) {
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+      }
+    }
+  }
+  .content-block {
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      @include respondto(maxTablet) {
+        flex-wrap: nowrap;
+        gap: unset;
+      }
+      .swiper-slide {
+        width: 48.2%;
+      }
+    }
+    .block-wrapper {
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+    }
+    .card-item {
+      &:hover,
+      &:focus {
+        .overlay {
+          height: 35%;
+          padding-top: 1rem;
+
+          @include respondto(desktopSm) {
+            height: 55%;
+          }
+
+          @include respondto(tablet) {
+            height: 55%;
+          }
+
+          @include respondto(phone) {
+            height: 45%;
+          }
+        }
+      }
+    }
+
+    .text-card {
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      .name {
+        font-size: 1.8rem;
+        @include font-weight(extrabold);
+        margin-bottom: 0.5rem;
+      }
+      @media screen and(max-width:375px) {
+        font-size: 1.2rem;
+      }
+      .about-name {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &.bottom-margin-title {
+    h2 {
+      @include respondto(onlyDesktop) {
+        margin-bottom: 7rem;
+      }
+    }
+  }
+
+  .width-widget {
+    .layout-row {
+      flex-direction: column !important;
+      .text-content {
+        margin-right: 0rem;
+      }
+    }
+  }
+}
+
+.width-widget {
+  .swiper-wrapper {
+    flex-wrap: nowrap !important;
+    @include respondto(onlyDesktop) {
+      gap: 1.8rem !important;
+    }
+  }
+  .swiper-slide {
+    @include respondto(onlyDesktop) {
+      width: 24% !important;
+    }
+  }
+  // .box-wrapper {
+  //   padding-right: 0rem !important;
+  // }
+}

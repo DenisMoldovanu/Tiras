@@ -1,0 +1,104 @@
+.filtered-blog {
+  //   margin-bottom: 15.7rem;
+  .filters-items {
+    @include respondto(maxTablet) {
+      border-bottom: 1px solid #c8c8c8;
+      padding-bottom: 3.7rem;
+    }
+  }
+  .swiper-container {
+    @include respondto(onlyDesktop) {
+      margin-left: unset !important;
+    }
+    @include respondto(maxTablet) {
+      //   margin-left: unset !important;
+      padding-bottom: 20px;
+    }
+    .swiper-wrapper {
+      @include respondto(onlyDesktop) {
+        width: unset !important;
+        height: unset !important;
+        flex-direction: column !important;
+      }
+      .swiper-slide {
+        @include respondto(onlyDesktop) {
+          border-bottom: 1px solid #c8c8c8;
+          margin-bottom: 2.9rem;
+        }
+      }
+    }
+  }
+  p {
+    text-transform: uppercase;
+    @include font-weight(extrabold);
+    font-size: 1.6rem;
+    font-family: $font-primary;
+  }
+
+  .element-item {
+    margin-bottom: 2.1rem;
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    @include respondto(phone) {
+      gap: 0rem;
+    }
+
+    .img-block {
+      @include respondto(phone) {
+        width: 100%;
+      }
+      img {
+        @include respondto(phone) {
+          width: 100% !important;
+        }
+      }
+    }
+    .block-wrapper {
+      max-width: 35rem;
+      @include respondto(phone) {
+        max-width: 100%;
+      }
+    }
+    .tag-item {
+      background-color: $black;
+      color: $white;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      padding: 1rem 1.5rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      left: 0;
+
+      @include font-weight(extrabold);
+
+      @include respondto(maxTablet) {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    .content-block {
+      @include respondto(phone) {
+        display: none;
+      }
+      .box-wrapper {
+        max-width: 35rem;
+        span {
+          @include font-weight(extrabold);
+          font-size: 1.8rem;
+        }
+      }
+      .links-block {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0rem !important;
+  }
+}
+

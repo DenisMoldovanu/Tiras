@@ -1,0 +1,17 @@
+@@include('./templates/common/top.html')
+@@include('./templates/common/main-header.html')
+
+<!-- theme color class: theme-1, theme-2, theme-3 -->
+<!-- if homepage (homepage class) hide breadcrumbs -->
+<div class="theme-3">
+  <!-- widgets -->
+  @@include('./widgets/navigation-block/navigation-block.html')
+  @@include('./widgets/featured-post/featured-post.html')
+  @@include('./widgets/filtered-category/filtered-category.html')
+
+  <!-- footer include -->
+  @@include('./templates/common/main-footer.html')
+
+  <!-- end widgets -->
+</div>
+@@include('./templates/common/bottom.html')

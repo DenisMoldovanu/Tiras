@@ -1,0 +1,135 @@
+.image-with-columns {
+  margin-bottom: 20rem;
+
+  @include respondto(maxTablet) {
+    margin-bottom: 5rem;
+  }
+
+  .heading-block {
+    h2 {
+      @include respondto(onlyDesktop) {
+        margin-bottom: 5rem;
+      }
+
+      @include respondto(maxTablet) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .content-wrapper,
+  .columns-wrapper {
+    @include respondto(maxTablet) {
+      flex-direction: column;
+    }
+  }
+
+  .img-block {
+    margin-right: 4rem;
+    width: 29%;
+
+    @include respondto(desktopSm) {
+      width: 80%;
+    }
+
+    img {
+      height: 100%;
+      min-height: 60rem;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .columns-wrapper {
+    @include respondto(onlyDesktop) {
+      width: 71%;
+    }
+
+    @include respondto(desktopSm) {
+      flex-direction: column;
+      margin-left: 3rem;
+    }
+  }
+
+  .column-block {
+    padding: 0 3rem;
+    width: 50%;
+
+    @include respondto(desktopSm) {
+      border-bottom: 1px solid $silver;
+      padding-left: 0;
+      padding-bottom: 6rem;
+      width: 100%;
+    }
+
+    @include respondto(maxTablet) {
+      padding: 3.5rem 0;
+      width: 100%;
+    }
+
+    &:last-of-type {
+      border-left: 1px solid $silver;
+      padding-right: 0;
+
+      @include respondto(onlyDesktop) {
+        p {
+          max-width: 35rem;
+        }
+      }
+
+      @include respondto(desktopSm) {
+        border-left: none;
+        margin-top: 2rem;
+      }
+
+      @include respondto(maxTablet) {
+        border-left: none;
+        border-bottom: 1px solid $silver;
+        border-top: 1px solid $silver;
+      }
+    }
+
+    .title-block {
+      margin-bottom: 3rem;
+
+      @include respondto(onlyDesktop) {
+        min-height: 15.5rem;
+      }
+
+      @include respondto(desktopSm) {
+        min-height: auto;
+      }
+    }
+
+    .item-block {
+      margin-bottom: 4rem;
+
+      @include respondto(desktopSmall) {
+        &:nth-child(3),
+        &:last-of-type {
+          display: none;
+        }
+      }
+    }
+
+    h3,
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+      line-height: 4.4rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+      line-height: 4.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+}

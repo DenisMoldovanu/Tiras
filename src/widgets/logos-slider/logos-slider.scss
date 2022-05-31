@@ -1,0 +1,21 @@
+.logos-slider {
+  margin-bottom: 18rem;
+
+  @include respondto(maxTablet) {
+    margin-bottom: 3.5rem;
+  }
+
+  .swiper-slide {
+    max-width: 18rem;
+
+    img {
+      height: 14rem;
+      object-fit: contain;
+      width: 100%;
+
+      @include respondto(maxTablet) {
+        height: 8rem;
+      }
+    }
+  }
+}

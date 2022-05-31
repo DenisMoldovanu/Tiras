@@ -1,0 +1,143 @@
+.map-block {
+  margin-bottom: 11rem;
+
+  @include respondto(maxTablet) {
+    margin-top: 3rem;
+  }
+
+  .map-row {
+    @include respondto(desktopSm) {
+      flex-direction: column;
+    }
+
+    @include respondto(maxTablet) {
+      flex-direction: column;
+    }
+  }
+
+  .map-iframe,
+  .map-content {
+    width: 50%;
+
+    @include respondto(desktopSm) {
+      width: 100%;
+    }
+
+    @include respondto(maxTablet) {
+      width: 100%;
+    }
+  }
+
+  .map-iframe {
+    position: relative;
+
+    @include respondto(onlyDesktop) {
+      height: 54rem;
+      max-width: 100%;
+      padding: 0;
+
+      &:after {
+        background: linear-gradient(
+          270.3deg,
+          $white 0.45%,
+          rgba(255, 255, 255, 0) 96.76%
+        );
+        content: "";
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 32rem;
+      }
+    }
+
+    @include respondto(tablet) {
+      height: 52rem;
+      max-width: 100%;
+      padding: 0;
+    }
+
+    @include respondto(phone) {
+      height: 26rem;
+    }
+
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .image-block {
+    @include respondto(onlyDesktop) {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    img {
+      height: 54rem;
+      object-fit: cover;
+      width: 100%;
+
+      @include respondto(tablet) {
+        height: 52rem;
+      }
+
+      @include respondto(phone) {
+        height: 26rem;
+      }
+    }
+  }
+
+  .map-content {
+    @include respondto(onlyDesktop) {
+      padding: 5rem 5.5rem;
+    }
+
+    @include respondto(maxTablet) {
+      padding-bottom: 0;
+      padding-top: 4rem;
+    }
+  }
+
+  .info-block {
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      @include font-weight(extrabold);
+    }
+
+    span {
+      display: block;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  .one-column {
+    max-width: 56rem;
+  }
+
+  .myaccordion {
+    margin: 4rem 0 0 0;
+
+    @include respondto(maxTablet) {
+      margin-top: 3rem;
+    }
+
+    .card {
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    .card-header {
+      button {
+        font-size: 1.4rem;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+    }
+  }
+}

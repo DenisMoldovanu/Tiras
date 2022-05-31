@@ -1,0 +1,218 @@
+.card-listing {
+  margin-bottom: 12.5rem;
+
+  .card-item-wrapper {
+    border-bottom: 10px solid $seagull;
+  }
+
+  .tag-item {
+    color: $white;
+    display: block;
+    font-family: $font-tertiary;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  .card-item {
+    align-items: baseline;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 35rem;
+    padding: 3rem;
+
+    @include respondto(maxTablet) {
+      min-height: 42rem;
+    }
+
+    svg {
+      &.icon {
+        height: 4.6rem;
+        margin-bottom: 2rem;
+        object-fit: contain;
+        width: 4.4rem;
+
+        @include respondto(maxTablet) {
+          margin-bottom: 4rem;
+        }
+      }
+
+      &.icon-default {
+        fill: $white;
+      }
+
+      &.custom-icon {
+        fill: transparent;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      // background-color: $seagull;
+      border-left: none;
+
+      @include respondto(onlyDesktop) {
+        transform: scale(1.1);
+        position: relative;
+        z-index: 1;
+      }
+
+      .h3,
+      .text,
+      a,
+      span {
+        color: $black;
+      }
+
+      svg {
+        &.icon-default {
+          fill: $black;
+        }
+
+        &.custom-icon {
+          fill: $black;
+        }
+      }
+
+      .link-item {
+        span {
+          color: $black;
+        }
+        svg {
+          fill: $black;
+        }
+      }
+    }
+
+    .h3,
+    .text,
+    a {
+      color: $white;
+      display: block;
+    }
+
+    .h3 {
+      font-size: 3rem;
+      line-height: 5.2rem;
+      margin-bottom: 0;
+
+      @include respondto(desktopSmall) {
+        font-size: 2.2rem;
+      }
+
+      @include respondto(maxTablet) {
+        font-size: 3.2rem;
+        line-height: 6.2rem;
+      }
+    }
+
+    .text {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+
+      @include respondto(maxTablet) {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 0;
+      max-width: 24rem;
+
+      @include respondto(maxTablet) {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        max-width: 29rem;
+      }
+    }
+
+    .link-item {
+      margin-top: 4rem;
+
+      @include respondto(maxTablet) {
+        font-size: 2.2rem;
+        margin-top: 3rem;
+      }
+
+      span {
+        color: $white;
+      }
+
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    @include respondto(onlyDesktop) {
+      display: none;
+    }
+  }
+
+  .swiper-container {
+    @include respondto(maxTablet) {
+      overflow: hidden !important;
+    }
+  }
+
+  .custom-slider-nav--prev,
+  .custom-slider-nav--next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    @include respondto(maxTablet) {
+      display: none;
+    }
+  }
+
+  .custom-slider-nav--prev {
+    left: -2rem;
+
+    @media (min-width: 992px) and (max-width: 1350px) {
+      left: 2rem;
+    }
+  }
+
+  .custom-slider-nav--next {
+    right: -2rem;
+
+    @media (min-width: 992px) and (max-width: 1350px) {
+      right: 2rem;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+    margin: 1rem 0;
+
+    @include respondto(maxTablet) {
+      padding-bottom: 5.5rem;
+    }
+
+    &:not(:first-of-type) {
+      .card-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+        @include respondto(maxTablet) {
+          border-left: 0;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .slider {
+      border-bottom: 10px solid $seagull;
+      display: flex;
+      height: 100%;
+      // margin: 1rem 0;
+    }
+  }
+}

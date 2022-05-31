@@ -1,0 +1,64 @@
+.myaccordion {
+  margin-bottom: 4.8rem;
+  .card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    &:last-of-type {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
+
+  .card-header {
+    padding: 0rem;
+    margin-bottom: 0;
+    background-color: $white;
+    border-bottom: none;
+
+    h2 {
+      button {
+        border: none;
+        color: $black;
+        font-family: $font-primary;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 1.5rem 0;
+        text-align: left;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        width: 100%;
+        @include font-weight(extrabold);
+      }
+
+      .btn-link:hover {
+        text-decoration: none !important;
+      }
+
+      button:focus:not(:focus-visible) {
+        box-shadow: none;
+      }
+    }
+
+    .accordion-icons {
+      margin-left: 2rem;
+
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+      .minus-icon {
+        display: none;
+      }
+    }
+  }
+
+  .card-body {
+    padding: 0;
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
+}

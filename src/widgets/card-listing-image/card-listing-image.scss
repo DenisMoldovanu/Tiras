@@ -1,0 +1,113 @@
+.card-listing {
+  &.with-image {
+    margin-bottom: 0;
+
+    picture,
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 3.4rem;
+      margin-bottom: 5rem;
+
+      @include respondto(maxTablet) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    img {
+      height: 16rem;
+      object-fit: cover;
+    }
+
+    .card-item {
+      justify-content: flex-start;
+      min-height: auto;
+      padding: 0;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        img {
+          @include respondto(onlyDesktop) {
+            box-shadow: 0px 0px 9.17115px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+
+      .h3 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+      }
+    }
+
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      padding: 2rem 4rem 2.5rem 2.5rem;
+    }
+
+    .link-item {
+      margin-top: 1.8rem;
+    }
+
+    .swiper-container {
+      @include respondto(maxTablet) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    .swiper-slide {
+      @include respondto(onlyDesktop) {
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+      }
+
+      @include respondto(maxTablet) {
+        padding-bottom: 4rem;
+      }
+
+      .slider {
+        border-bottom: none;
+      }
+
+      .card-item {
+        border-bottom: 10px solid $seagull;
+      }
+    }
+  }
+
+  .subheading-block {
+    @include respondto(maxTablet) {
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-family: $font-primary;
+      font-size: 2.6rem;
+      margin-bottom: 0;
+      text-transform: uppercase;
+
+      @include respondto(phone) {
+        font-size: 2.2rem;
+      }
+    }
+
+    a {
+      margin-left: 2rem;
+
+      span {
+        line-height: 1;
+      }
+    }
+  }
+}

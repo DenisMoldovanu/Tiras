@@ -1,0 +1,15 @@
+.standard-content {
+  margin-top: 7rem;
+
+  @include respondto(maxTablet) {
+    margin-top: 5rem;
+  }
+
+  .content-block {
+    margin-bottom: 8rem;
+
+    p {
+      max-width: 89rem;
+    }
+  }
+}

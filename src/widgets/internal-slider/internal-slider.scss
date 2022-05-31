@@ -1,0 +1,174 @@
+.internal-slider {
+  margin-bottom: 10rem;
+
+  @include respondto(maxTablet) {
+    margin-bottom: 8rem;
+  }
+
+  .swiper-container {
+    position: relative;
+    position: relative;
+    max-width: 1200px;
+    margin: 0;
+
+    .swiper-slide {
+      width: 100% !important;
+
+      @include respondto(maxTablet) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .custom-slider-navs {
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    width: 37.5rem;
+    z-index: 3;
+
+    @include respondto(onlyDesktop) {
+      padding: 0;
+    }
+
+    @include respondto(desktopSm) {
+      bottom: 0;
+      right: 6vw;
+      width: 34rem;
+    }
+
+    @include respondto(maxTablet) {
+      margin-top: 5rem;
+
+      position: static;
+      width: 100%;
+    }
+
+    @include respondto(phone) {
+      padding-left: 3.5rem;
+    }
+  }
+
+  .internal-slider-nav--prev {
+    padding-left: 0;
+    margin-right: 2rem;
+  }
+
+  .internal-slider-nav--prev,
+  .internal-slider-nav--next {
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  .content-block,
+  h2 {
+    position: absolute;
+    right: 0;
+    width: 37.5rem;
+    z-index: 2;
+
+    @include respondto(desktopSm) {
+      right: 6vw;
+      width: 34rem;
+    }
+
+    @include respondto(maxTablet) {
+      width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    top: 6rem;
+
+    @include respondto(desktopSm) {
+      top: 4rem;
+    }
+
+    @include respondto(maxTablet) {
+      left: 3rem;
+      top: 39rem;
+      margin: 0 auto;
+    }
+
+    @include respondto(tablet) {
+      max-width: 720px;
+    }
+
+    @include respondto(phone) {
+      font-size: 2.8rem;
+      max-width: 505px;
+    }
+  }
+
+  .content-block {
+    top: 18rem;
+
+    @include respondto(onlyDesktop) {
+      padding: 0;
+    }
+
+    @include respondto(desktopSm) {
+      top: 14rem;
+    }
+
+    @include respondto(maxTablet) {
+      padding-top: 13rem;
+      position: static;
+    }
+
+    @include respondto(phone) {
+      padding-left: 3.5rem;
+    }
+
+    p {
+      font-size: 2.2rem;
+      line-height: 3.2rem;
+      margin-bottom: 1rem;
+
+      @include respondto(desktopSm) {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+
+      @include respondto(maxTablet) {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+      }
+    }
+
+    span {
+      display: block;
+      line-height: 2.4rem;
+
+      &.author-item {
+        font-size: 1.8rem;
+
+        @include font-weight(bold);
+      }
+
+      &.tag-item {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  img {
+    height: 50rem;
+    object-fit: cover;
+    width: 74rem;
+
+    @include respondto(desktopSm) {
+      height: 40rem;
+      width: 55vw;
+    }
+
+    @include respondto(maxTablet) {
+      height: 36rem;
+      width: 100%;
+    }
+  }
+}

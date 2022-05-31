@@ -1,0 +1,138 @@
+.featured-post {
+  margin: 8rem 0 10rem 0;
+
+  @include respondto(maxTablet) {
+    margin: 5rem 0 8rem 0;
+  }
+
+  .info-wrapper {
+    @include respondto(desktop) {
+      padding-left: 2rem;
+    }
+  }
+
+  .slider-wrapper {
+    @include respondto(maxTablet) {
+      margin-bottom: 6rem;
+    }
+
+    img {
+      height: 30rem;
+      object-fit: cover;
+      width: 100%;
+
+      @include respondto(maxTablet) {
+        height: 19rem;
+      }
+    }
+
+    .content-block {
+      background: $athens-gray;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      height: 100%;
+      justify-content: space-between;
+      padding: 2rem 3rem 3rem 3rem;
+
+      @include respondto(maxTablet) {
+        background-color: $black;
+        border-bottom: 13px solid $seagull;
+        padding: 5rem 3rem 3.8rem 3.5rem;
+
+        h2,
+        p,
+        a,
+        span {
+          color: $white;
+        }
+
+        svg {
+          fill: $white;
+        }
+      }
+
+      h2 {
+        font-size: 3.4rem;
+        line-height: 5.2rem;
+        margin-bottom: 1rem;
+
+        @include respondto(maxTablet) {
+          font-size: 2.4rem;
+          line-height: 4rem;
+        }
+      }
+
+      p {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+
+        @include respondto(maxTablet) {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+
+    .links-block {
+      justify-content: space-between;
+      margin-top: 4rem;
+
+      a {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .swiper-slide {
+      height: auto;
+    }
+
+    .slider-block {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    margin: 3rem auto 0 auto;
+    max-width: 100%;
+    width: 100%;
+
+    @include respondto(desktop) {
+      width: 97%;
+    }
+
+    @include respondto(desktopSm) {
+      width: 96%;
+    }
+
+    @include respondto(tablet) {
+      width: 96%;
+    }
+
+    @include respondto(phone) {
+      width: 85%;
+    }
+
+    .swiper-pagination-bullet {
+      width: 9.2rem;
+
+      @include respondto(maxTablet) {
+        width: 4rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 4.5rem;
+
+        @include respondto(maxTablet) {
+          margin-right: 1rem;
+        }
+      }
+
+      &.swiper-pagination-bullet-active {
+        height: 7px;
+      }
+    }
+  }
+}

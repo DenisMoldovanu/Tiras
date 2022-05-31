@@ -1,0 +1,295 @@
+.hero-branding {
+  margin-bottom: 5rem;
+  position: relative;
+
+  @include respondto(maxTablet) {
+    margin-bottom: 2rem;
+  }
+
+  &.h-550 {
+    .swiper-slide {
+      @include respondto(onlyDesktop) {
+        height: 55rem;
+
+        img {
+          height: 55rem;
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+
+    picture {
+      display: block;
+      background-color: $black;
+    }
+
+    img,
+    .video-iframe {
+      border-bottom: 1rem solid $seagull;
+      height: 73rem;
+
+      @media (min-width: 992px) and (max-width: 1280px) {
+        height: 100%;
+        min-height: 54rem;
+      }
+
+      @include respondto(maxTablet) {
+        height: 53rem;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1280px) {
+      .text-block {
+        min-height: auto;
+        padding-top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    @include respondto(maxTablet) {
+      border-width: 1.6rem;
+      margin-bottom: 3rem;
+    }
+
+    .buttons-block {
+      @include respondto(maxTablet) {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  .hero-slider-navs {
+    .hero-slider-nav,
+    .hero-slider-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+
+      @include respondto(maxTablet) {
+        display: none;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+
+      svg {
+        fill: $white;
+        height: 40px;
+        width: 14px;
+      }
+    }
+  }
+
+  .hero-slider-nav--next,
+  .hero-slider-nav--prev {
+    color: $white;
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+
+    @include respondto(maxTablet) {
+      display: none;
+    }
+  }
+
+  .hero-slider-nav--prev {
+    left: 5rem;
+
+    @media (min-width: 992px) and (max-width: 1300px) {
+      left: 2rem;
+    }
+  }
+
+  .hero-slider-nav--next {
+    right: 5rem;
+
+    @media (min-width: 992px) and (max-width: 1300px) {
+      right: 2rem;
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .container {
+    &:not(.buttons-block) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    &.buttons-block {
+      @include respondto(onlyDesktop) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        bottom: 6.5rem;
+        height: auto;
+        top: initial;
+      }
+
+      @include respondto(maxTablet) {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  h1,
+  p,
+  a {
+    color: $white;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 55rem;
+    padding-bottom: 3rem;
+
+    @include respondto(desktopSm) {
+      min-height: 45rem;
+    }
+
+    @include respondto(maxTablet) {
+      min-height: 48rem;
+    }
+
+    h1 {
+      max-width: 68rem;
+
+      span {
+        color: $seagull;
+        font-size: inherit;
+      }
+    }
+
+    a {
+      color: $seagull;
+      font-size: inherit;
+    }
+
+    .date-item {
+      color: $white;
+    }
+
+    p {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      max-width: 49rem;
+
+      @include font-weight(semibold);
+    }
+  }
+
+  .button-lg {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @include respondto(maxTablet) {
+        margin: 0 0 1.5rem 0;
+      }
+    }
+
+    @include respondto(maxTablet) {
+      border: 1px solid $black;
+      color: $black;
+
+      svg {
+        fill: $black;
+      }
+    }
+  }
+
+  // additional classes:
+  &.center-text {
+    .text-block {
+      align-items: center;
+
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  &.right-text {
+    .text-block {
+      align-items: flex-end;
+
+      h1,
+      p {
+        text-align: right;
+      }
+    }
+  }
+
+  &.vertical-center {
+    .text-block {
+      @include respondto(onlyDesktop) {
+        justify-content: center;
+        padding: 3rem 0;
+      }
+
+      @media (min-width: 992px) and (max-width: 1280px) {
+        padding-bottom: 0;
+        padding-top: 50%;
+      }
+
+      @include respondto(maxTablet) {
+        padding: 0;
+      }
+    }
+  }
+
+  &.text-width-md {
+    .text-block {
+      p {
+        max-width: 52rem;
+      }
+    }
+  }
+
+  &.branding-hero {
+    @include respondto(maxTablet) {
+      .container:not(.buttons-block) {
+        bottom: 3rem;
+        top: auto;
+      }
+
+      .swiper-slide {
+        .video-iframe,
+        img {
+          height: 67rem;
+        }
+      }
+
+      h1 {
+        font-size: 3.2rem;
+        line-height: 3.4rem;
+      }
+
+      .text-block {
+        p {
+          font-size: 1.6rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}

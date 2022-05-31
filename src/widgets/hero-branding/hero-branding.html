@@ -1,0 +1,218 @@
+<!-- Hero branding widget -->
+<!-- additional classes to be added from admin:
+  center-text, right-text (left text is default)
+  vertical-center -> centers content vertically
+  video-overlay -  adds overlay over image/video
+  text-width-md - changes width of copy text
+  h-550 - sets height to 550px
+  text-width-md - sets different width for p tag
+-->
+<div data-component-key="hero-branding" class="hero-branding">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="video-iframe hidden-xs hidden-sm">
+          <iframe
+            width="100%"
+            frameborder="0"
+            allow="autoplay; encrypted-media;"
+            src="https://player.vimeo.com/video/641668355?autoplay=1&muted=1&loop=1&background=1&dnt=1"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!--  if mobile display show image instead of video -->
+        <picture class="img-background visible-xs visible-sm">
+          <source media="(min-width: 768px)" srcset="" />
+          <source media="(max-width: 767px)" srcset="" />
+          <img src="img/hero-default.png" alt="hero branding banner" />
+        </picture>
+        <!-- end mobile display -->
+
+        <!-- slider content -->
+        <div class="container">
+          <div class="row">
+            <div class="content-wrapper col-sm-12">
+              <div class="text-block">
+                <h1>Built with the <span>athlete</span> in mind</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  risus, suspendisse amet elit praesent pulvinar. Cursus lectus
+                  erat egestas tincidunt vestibulum fringilla sed hac.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- with buttons block inside content -->
+        <div class="container buttons-block">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="layout-row layout-column-xs">
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Find the perfect sport"
+                >
+                  <span>Find the perfect sport</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Become a better athlete"
+                >
+                  <span>Become a better athlete</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Discover Sanford"
+                >
+                  <span>Discover Sanford</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end slider content -->
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+          <source media="(min-width: 768px)" srcset="" />
+          <source media="(max-width: 767px)" srcset="" />
+          <img src="img/hero-default.png" alt="hero branding banner" />
+        </picture>
+
+        <!-- slider content -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-block">
+                <h1>2 Built with the <span>athlete</span> in mind</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  risus, suspendisse amet elit praesent pulvinar. Cursus lectus
+                  erat egestas tincidunt vestibulum fringilla sed hac.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- with buttons block inside content -->
+        <div class="container buttons-block">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="layout-row layout-column-xs">
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Find the perfect sport"
+                >
+                  <span>Find the perfect sport</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Become a better athlete"
+                >
+                  <span>Become a better athlete</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Discover Sanford"
+                >
+                  <span>Discover Sanford</span>
+                  <svg>
+                    <use xlink:href="svg/sprite.svg#right-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end slider content -->
+      </div>
+    </div>
+
+    <div class="swiper-pagination visible-xs visible-sm"></div>
+  </div>
+
+  <div class="hero-slider-navs">
+    <button type="button" class="hero-slider-nav hero-slider-nav--prev">
+      <svg>
+        <use xlink:href="svg/sprite.svg#slider-left-arrow"></use>
+      </svg>
+    </button>
+    <button type="button" class="hero-slider-nav hero-slider-nav--next">
+      <svg>
+        <use xlink:href="svg/sprite.svg#slider-right-arrow"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- buttons block outside slider content -->
+  <!-- <div class="container buttons-block">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="layout-row layout-column-xs">
+          <a
+            class="button-lg"
+            href="javascript:;"
+            aria-label="Find the perfect sport"
+          >
+            <span>Find the perfect sport</span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+
+          <a
+            class="button-lg"
+            href="javascript:;"
+            aria-label="Become a better athlete"
+          >
+            <span>Become a better athlete</span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+
+          <a
+            class="button-lg"
+            href="javascript:;"
+            aria-label="Discover Sanford"
+          >
+            <span>Discover Sanford</span>
+            <svg>
+              <use xlink:href="svg/sprite.svg#right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+<!-- end  Hero branding widget -->

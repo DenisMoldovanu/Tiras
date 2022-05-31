@@ -1,0 +1,80 @@
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+  background-color: $white;
+  border-color: $white;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  min-width: 15rem;
+  width: 100%;
+}
+
+.bootstrap-select {
+  @include respondto(phone) {
+    width: 100% !important;
+  }
+
+  .btn-light {
+    background-color: $white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $black;
+  }
+
+  button,
+  .dropdown-item {
+    font-size: 1.8rem;
+  }
+
+  button {
+    background-color: $white;
+    border-radius: 0;
+    border: 1px solid $black;
+    line-height: 3rem;
+    height: 3.5rem;
+    padding: 0;
+  }
+
+  .filter-option-inner-inner {
+    color: $black;
+    @include font-weight(extrabold);
+  }
+
+  .dropdown-toggle {
+    .filter-option-inner-inner {
+      overflow: visible; //safari show text fix
+    }
+
+    &:after {
+      background: url("../img/svg/down-arrow-black.svg") no-repeat 0 0;
+      border: none;
+      width: 12px;
+      height: 7px;
+    }
+  }
+
+  .dropdown-menu {
+    &,
+    li {
+      padding: 0;
+    }
+  }
+
+  .dropdown-item {
+    font-size: 1.4rem;
+    padding: 1rem;
+
+    &.active {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}

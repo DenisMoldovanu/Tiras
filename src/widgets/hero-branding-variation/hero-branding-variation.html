@@ -1,0 +1,114 @@
+<!-- Hero branding widget - with HERO-VARIATION additional class -->
+<!-- additional classes to be added from admin:
+  center-text, right-text (left text is default)
+  vertical-center -> centers content vertically
+  video-overlay -  adds overlay over image/video
+  h-550 - sets height to 550px
+  text-width-md - sets different width for p tag
+-->
+<div
+  data-component-key="hero-branding"
+  class="hero-branding hero-variation h-550"
+>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source media="(min-width: 768px)" srcset="" />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/event-basketball-mobile.jpg"
+          />
+          <img src="img/event-basketball.jpg" alt="hero event basketball" />
+        </picture>
+
+        <!-- slider content -->
+        <div class="container">
+          <div class="row">
+            <div class="content-wrapper col-sm-12">
+              <div class="text-block">
+                <h1>All age basketball <span>tournament</span></h1>
+                <span class="date-item">Feb 19, 2022 &#8226; 3pm</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  risus, suspendisse amet elit praesent.
+                </p>
+                <span class="bottom-info">All age basketball tournament</span>
+              </div>
+
+              <div class="cta-button layout-row">
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Buy tickets"
+                >
+                  Buy tickets
+                </a>
+
+                <a class="button-lg" href="javascript:;" aria-label="Register">
+                  Register
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end slider content -->
+      </div>
+
+      <div class="swiper-slide">
+        <div class="video-iframe hidden-xs hidden-sm">
+          <iframe
+            width="100%"
+            frameborder="0"
+            allow="autoplay; encrypted-media;"
+            src="https://player.vimeo.com/video/641668355?autoplay=1&muted=1&loop=1&background=1&dnt=1"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!--  if mobile display show image instead of video -->
+        <picture class="img-background visible-xs visible-sm">
+          <source media="(min-width: 768px)" srcset="" />
+          <source media="(max-width: 767px)" srcset="" />
+          <img src="img/hero-default.png" alt="hero branding banner" />
+        </picture>
+        <!-- end mobile display -->
+
+        <!-- slider content -->
+        <div class="container">
+          <div class="row">
+            <div class="content-wrapper col-sm-12">
+              <div class="text-block">
+                <h1>All age basketball <span>tournament</span></h1>
+                <span class="date-item">Feb 19, 2022 &#8226; 3pm</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  risus, suspendisse amet elit praesent.
+                </p>
+                <span class="bottom-info">All age basketball tournament</span>
+              </div>
+
+              <div class="cta-button layout-row">
+                <a
+                  class="button-lg"
+                  href="javascript:;"
+                  aria-label="Buy tickets"
+                >
+                  Buy tickets
+                </a>
+
+                <a class="button-lg" href="javascript:;" aria-label="Register">
+                  Register
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end slider content -->
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<!-- end  Hero branding widget -->

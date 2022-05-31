@@ -1,0 +1,170 @@
+.short-hero-branding {
+  margin-bottom: 5rem;
+  position: relative;
+
+  @include respondto(maxTablet) {
+    margin-bottom: 2rem;
+  }
+
+  picture {
+    display: block;
+    background-color: $black;
+  }
+
+  img {
+    border-bottom: 1rem solid $seagull;
+    height: 30rem;
+
+    @include respondto(maxTablet) {
+      height: 37rem;
+    }
+  }
+
+  @include respondto(maxTablet) {
+    border-width: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .buttons-block {
+    @include respondto(maxTablet) {
+      margin-top: 3rem;
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .img-background {
+    height: 100%;
+  }
+
+  .container {
+    &:not(.newsletter-block) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+
+      @include respondto(maxTablet) {
+        top: 40%;
+      }
+    }
+
+    &.newsletter-block {
+      @include respondto(onlyDesktop) {
+        margin-right: 0;
+        max-width: 100%;
+        width: 27.5rem;
+        position: absolute;
+        right: 12rem;
+        top: 45%;
+        transform: translateY(-50%);
+        margin: 0;
+      }
+
+      @include respondto(maxTablet) {
+        margin: 3rem auto 0 auto;
+        padding-bottom: 3rem;
+
+        p {
+          color: $black;
+        }
+      }
+
+      form {
+        width: 27.5rem;
+
+        @include respondto(maxTablet) {
+          width: 100%;
+
+          input {
+            border-color: $black;
+          }
+        }
+      }
+
+      .button {
+        transition: all 0.3s ease-in;
+
+        @include respondto(onlyDesktop) {
+          border-color: $white;
+          color: $white;
+        }
+
+        &:hover,
+        &:focus {
+          border-color: $seagull;
+          color: $seagull;
+        }
+      }
+
+      .button,
+      input {
+        height: 4.5rem;
+      }
+    }
+  }
+
+  h1,
+  p,
+  a {
+    color: $white;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h1 {
+      color: $seagull;
+      margin-bottom: 2rem;
+      max-width: 68rem;
+
+      @include respondto(maxTablet) {
+        font-size: 3.2rem;
+        line-height: 3.4rem;
+      }
+    }
+
+    p {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      max-width: 52rem;
+
+      @include font-weight(semibold);
+
+      @include respondto(maxTablet) {
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+
+  // additional classes:
+  &.center-text {
+    .text-block {
+      align-items: center;
+
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  &.right-text {
+    .text-block {
+      align-items: flex-end;
+
+      h1,
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
