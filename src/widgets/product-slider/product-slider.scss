@@ -4,11 +4,133 @@
     position: relative;
   }
   .white-background {
+    max-width: 1350px;
+    width: 100%;
     position: absolute;
     top: -6rem;
     background-color: $white;
-    padding: 2.8rem 0rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .title-slider-block {
+    padding: 0rem 8rem;
+    text-align: center;
+    p {
+      font-size: 2.4rem;
+      color: $black;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      padding: 9px 26px 10px;
+      border-radius: 5px;
+      background-color: #f7b551;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+    }
+  }
+  .slider-container {
+    max-width: 1400px;
+    width: 100%;
+    overflow: hidden;
+
+    .product-container {
+      padding: 2.8rem 4rem;
+      background-color: #f7f7f7;
+      border-left: 1px solid rgba(236, 236, 236, 0.4);
+    }
+
+    img {
+      margin-bottom: 1.3rem;
+    }
+    .product-title {
+      font-size: 1.2rem;
+      color: #563318;
+      margin-bottom: 0.5rem;
+    }
+    .content-block {
+      .box-wrapper {
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          max-width: 15.4rem;
+          line-height: normal;
+          margin-bottom: 0.8rem;
+        }
+        span {
+          margin-bottom: 1.2rem;
+          display: block;
+        }
+      }
+      .bottom-wrapper {
+        .price {
+          span {
+            font-size: 1.6rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .swiper-pagination {
+      display: none;
+      @include respondto(maxTablet) {
+        display: block;
+      }
+    }
+    .custom-slider-navs {
+      .custom-slider-nav,
+      .custom-slider-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        opacity: 0.56;
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+        @include respondto(maxTablet) {
+          display: none;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+
+        svg {
+          fill: $black;
+          height: 40px;
+          width: 14px;
+        }
+      }
+    }
+
+    .custom-slider-nav--next,
+    .custom-slider-nav--prev {
+      color: $white;
+
+      &.swiper-button-disabled {
+        display: none;
+      }
+
+      @include respondto(maxTablet) {
+        display: none;
+      }
+    }
+
+    .custom-slider-nav--prev {
+      left: 27rem;
+
+      @media screen and (max-width: 1200px) {
+        left: 25.6rem;
+      }
+    }
+
+    .custom-slider-nav--next {
+      right: -2rem;
+    }
   }
 }

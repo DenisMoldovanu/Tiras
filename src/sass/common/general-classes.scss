@@ -293,10 +293,6 @@ textarea {
     svg {
       height: 3.2rem;
       width: 1.8rem;
-
-      @media (min-width: 992px) and (max-width: 1350px) {
-        fill: $white !important;
-      }
     }
   }
 }

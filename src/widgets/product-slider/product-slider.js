@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  $(".product-slider .slider-item").each(function (i) {
+  $(".product-slider .slider-container").each(function (i) {
     var swiperProductSlider = new Swiper($(this).find(".swiper-container"), {
       slidesPerView: 4,
-      spaceBetween: 10,
+      spaceBetween: 0,
       centeredSlides: false,
-      loop: false,
+      loop: true,
       speed: 900,
       allowTouchMove: true,
       slideToClickedSlide: false,
@@ -21,17 +21,21 @@ $(document).ready(function () {
         clickable: true,
       },
       breakpoints: {
-        992: {
+        1300: {
           slidesPerView: 4,
           spaceBetween: 0,
         },
-        768: {
+        992: {
           slidesPerView: 3,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         300: {
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 10,
         },
       },
     });
