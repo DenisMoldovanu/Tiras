@@ -40,6 +40,32 @@
       background-color: #f7f7f7;
       border-left: 1px solid rgba(236, 236, 236, 0.4);
     }
+    .block-wrapper {
+      position: relative;
+    }
+    .product-like,
+    .product-view {
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: $white;
+      text-align: center;
+      padding-top: 0.2rem;
+
+      position: absolute;
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+    .product-like {
+      top: 1rem;
+      left: 1rem;
+    }
+    .product-view {
+      top: 4rem;
+      left: 1rem;
+    }
 
     img {
       margin-bottom: 1.3rem;
@@ -68,6 +94,22 @@
           span {
             font-size: 1.6rem;
             font-weight: 700;
+          }
+        }
+        .add-cart {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          svg {
+            width: 2rem;
+            height: 2rem;
+            fill: $Casablanca;
+          }
+          span {
+            display: block;
+            max-width: 37px;
+            font-size: 12px;
           }
         }
       }
@@ -132,5 +174,39 @@
     .custom-slider-nav--next {
       right: -2rem;
     }
+  }
+
+  .rate {
+    float: left;
+  }
+  .rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+  }
+  .rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ccc;
+  }
+  .rate:not(:checked) > label:before {
+    content: "★ ";
+  }
+  .rate > input:checked ~ label {
+    color: #ffc700;
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
   }
 }
