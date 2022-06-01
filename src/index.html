@@ -1,23 +1,15 @@
 @@include('./templates/common/top.html')
-<!-- if homepage (homepage class on body) hides breadcrumbs blocks -->
-<div class="homepage">@@include('./templates/common/main-header.html')</div>
+@@include('./templates/common/header.html')
 
-<!-- theme color class: theme-1, theme-2, theme-3 -->
-<!-- if homepage (homepage class) hide breadcrumbs -->
-<div class="theme-1">
-  <!-- widgets -->
-  @@include('./widgets/hero-branding/hero-branding.html')
-  @@include('./widgets/card-listing/card-listing.html')
-  @@include('./widgets/three-column-slider/three-column-slider.html')
-  @@include('./widgets/filtered-features/filtered-features.html')
-  @@include('./widgets/internal-slider/internal-slider.html')
-  @@include('./widgets/pathway-widget/pathway-widget.html')
-  @@include('./widgets/full-width-carousel/full-width-carousel.html')
-  @@include('./widgets/logos-slider/logos-slider.html')
+<!-- widgets -->
+@@include('./widgets/homepage-hero-slider/homepage-hero-slider.html')
 
-  <!-- footer include -->
-  @@include('./templates/common/main-footer.html')
-
-  <!-- end widgets -->
+<div class="body-page">
+  @@include('./widgets/product-slider/product-slider.html')
 </div>
+<!-- footer include -->
+
+@@include('./templates/common/footer.html')
+<!-- end widgets -->
+
 @@include('./templates/common/bottom.html')

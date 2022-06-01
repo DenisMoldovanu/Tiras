@@ -8,53 +8,12 @@
 @import "common/global.scss";
 @import "common/general-classes.scss";
 @import "common/buttons.scss";
-@import "common/bootstrap-select.scss";
 @import "common/forms.scss";
-@import "common/main-header.scss";
-@import "common/burger-menu.scss";
-@import "common/main-footer.scss";
 @import "common/pages.scss";
-@import "common/bootstrap-accordion.scss";
-
-//Tiras scss
 @import "common/header.scss";
 @import "common/footer.scss";
-/////////////////
 
-// widgets
-@import "../widgets/hero-branding/hero-branding.scss";
-@import "../widgets/short-hero-branding/short-hero-branding.scss";
-@import "../widgets/hero-branding-variation/hero-branding-variation.scss";
-@import "../widgets/breadcrumbs/breadcrumbs.scss";
-@import "../widgets/navigation-block/navigation-block.scss";
-@import "../widgets/sticky-nav/sticky-nav.scss";
-@import "../widgets/standard-content/standard-content.scss";
-@import "../widgets/card-listing/card-listing.scss";
-@import "../widgets/card-flipper/card-flipper.scss";
-@import "../widgets/card-listing-image/card-listing-image.scss";
-@import "../widgets/image-with-columns/image-with-columns.scss";
-@import "../widgets/pathway-widget/pathway-widget.scss";
-@import "../widgets/full-width-carousel/full-width-carousel.scss";
-@import "../widgets/internal-slider/internal-slider.scss";
-@import "../widgets/map-block/map-block.scss";
-@import "../widgets/featured-post/featured-post.scss";
-@import "../widgets/logos-slider/logos-slider.scss";
-@import "../widgets/filtered-category/filtered-category.scss";
-@import "../widgets/three-column-slider/three-column-slider.scss";
-@import "../widgets/three-column-slider-tabs/three-column-slider-tabs.scss";
-@import "../widgets/filtered-features/filtered-features.scss";
-@import "../widgets/tabbed-content-module/tabbed-content-module.scss";
-@import "../widgets/hero-branding-sports/hero-branding-sports.scss";
-@import "../widgets/full-size-carousel/full-size-carousel.scss";
-@import "../widgets/four-block-module/four-block-module.scss";
-@import "../widgets/wide-block-content/wide-block-content.scss";
-@import "../widgets/map-block-variation/map-block-variation.scss";
-@import "../widgets/blog-article/blog-article.scss";
-@import "../widgets/filtered-blog/filtered-blog.scss";
-@import "../widgets/blog-author/blog-author.scss";
-@import "../widgets/breadcrumbs-blog/breadcrumbs-blog.scss";
-
-//tiraaas
+//tiraaas widgets
 @import "../widgets/homepage-hero-slider/homepage-hero-slider.scss";
 @import "../widgets/product-slider/product-slider.scss";
 
@@ -62,6 +21,3 @@
 
 // mac style fixes
 @import "common/mac-styles.scss";
-
-//keep last here
-@import "common/color-themes.scss";
