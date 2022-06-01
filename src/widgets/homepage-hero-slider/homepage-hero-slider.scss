@@ -16,7 +16,7 @@
     .text-block {
       p {
         font-size: 1.4rem;
-        @include font-weight(bold);
+        @include font-weight(extrabold);
         margin: 0;
         padding: 0;
       }
@@ -26,6 +26,7 @@
         color: $white;
         line-height: normal;
         margin-bottom: 1.7rem;
+        letter-spacing: 5.94px;
         span {
           display: block;
         }
