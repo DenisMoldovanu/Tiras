@@ -1,5 +1,8 @@
 .hero-slider {
   background-image: linear-gradient(89deg, #faca5b 0%, #f4ac3e 65%);
+  @include respondto(maxTablet) {
+    margin-bottom: 5.2rem;
+  }
 
   img {
     margin-right: 14.9rem;
@@ -10,6 +13,17 @@
     padding: 2rem 2.5rem 7.5rem 2.5rem;
     background-repeat: no-repeat;
     background-position: 13% 103%;
+  }
+  .swiper-container {
+    @include respondto(maxTablet) {
+      padding-bottom: 2rem;
+    }
+
+    .swiper-pagination-bullets {
+      @include respondto(maxTablet) {
+        bottom: 0;
+      }
+    }
   }
 
   .content-slider {

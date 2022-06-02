@@ -1,13 +1,50 @@
 .four-cards-homepage {
+  height: 10rem;
+  @include respondto(desktopSm) {
+    height: 14rem;
+  }
+  @include respondto(maxTablet) {
+    height: unset;
+  }
+
+  .container {
+    position: relative;
+  }
   .background-white {
     border-radius: 5px;
     box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.05);
     background-color: $white;
+    position: absolute;
+    @include respondto(maxTablet) {
+      position: unset;
+      margin-bottom: 2rem;
+    }
+
+    @include respondto(phone) {
+      flex-direction: column;
+      background: unset;
+      box-shadow: unset;
+    }
+  }
+
+  .display-flex {
+    @include respondto(phone) {
+      flex-direction: column;
+    }
   }
   .card-item {
     padding: 3rem;
     text-align: center;
     border-right: 1px solid #f4f1f1;
+    @include respondto(phone) {
+      border-right: unset;
+      border-radius: 5px;
+      box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.05);
+      background-color: $white;
+      margin-bottom: 2.5rem;
+      width: 100%;
+      padding: 3rem 0rem;
+    }
     img {
       margin-bottom: 1rem;
     }

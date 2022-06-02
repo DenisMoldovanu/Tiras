@@ -1,5 +1,16 @@
 .product-slider {
   height: 35.4rem;
+
+  @include respondto(maxTablet) {
+    height: unset;
+    margin-bottom: 5.2rem;
+  }
+
+  .display-flex {
+    @include respondto(phone) {
+      flex-direction: column;
+    }
+  }
   .container {
     position: relative;
   }
@@ -11,11 +22,19 @@
     background-color: $white;
     border-radius: 0.5rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    @include respondto(maxTablet) {
+      position: inherit;
+      top: unset;
+      padding-bottom: 1rem;
+    }
   }
 
   .title-slider-block {
     padding: 0rem 8rem;
     text-align: center;
+    @include respondto(phone) {
+      padding: 4rem 0rem;
+    }
     p {
       font-size: 2.4rem;
       color: $black;
@@ -35,6 +54,17 @@
     width: 100%;
     overflow: hidden;
 
+    .swiper-container {
+      @include respondto(maxTablet) {
+        padding-bottom: 2rem;
+      }
+
+      .swiper-pagination-bullets {
+        @include respondto(maxTablet) {
+          bottom: 0;
+        }
+      }
+    }
     .product-container {
       padding: 2.8rem 4rem;
       background-color: #f7f7f7;

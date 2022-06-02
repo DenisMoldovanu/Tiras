@@ -2,6 +2,9 @@
   background-color: #efefef;
   .pad-top {
     padding: 13.8rem 0rem 4.9rem 0rem;
+    @include respondto(maxTablet) {
+      padding: 4.9rem 0rem;
+    }
   }
 
   .main-footer-item {

@@ -33,8 +33,12 @@ $(document).ready(function () {
           slidesPerView: 2,
           spaceBetween: 20,
         },
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
         300: {
-          slidesPerView: 1,
+          slidesPerView: 1.5,
           spaceBetween: 10,
         },
       },
