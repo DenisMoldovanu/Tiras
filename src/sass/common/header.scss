@@ -118,6 +118,11 @@
     .right-nav-block {
       display: flex;
       align-items: center;
+
+      @include respondto(desktopSmall) {
+        display: none;
+      }
+
       .sale-link {
         margin-right: 4.1rem;
         svg {

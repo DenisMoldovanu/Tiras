@@ -1,9 +1,15 @@
 .footer {
   background-color: #efefef;
   .pad-top {
-    padding: 13.8rem 0rem 4.9rem 0rem;
+    padding: 13.8rem 2.5rem 4.9rem;
     @include respondto(maxTablet) {
-      padding: 4.9rem 0rem;
+      padding: 4.9rem 2.5rem;
+    }
+  }
+  .display-flex {
+    @include respondto(phone) {
+      flex-wrap: wrap;
+      justify-content: space-between !important;
     }
   }
 
@@ -34,6 +40,9 @@
       }
     }
     .main-footer-menu-list {
+      @include respondto(phone) {
+        margin-bottom: 2rem;
+      }
       a {
         color: $black;
         font-size: 1.4rem;
