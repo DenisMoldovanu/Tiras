@@ -3,6 +3,9 @@
   bottom: 20rem;
   right: 4rem;
   z-index: 99;
+  @include respondto(phone) {
+    bottom: 5rem;
+  }
 
   .call-buttons {
     display: flex;

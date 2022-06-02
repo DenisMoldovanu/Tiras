@@ -13,9 +13,11 @@
       align-items: center;
     }
     .info-block {
+      a:first-child {
+        margin-right: 1.1rem;
+      }
       a:nth-child(2) {
         margin-right: 5.6rem;
-        margin-left: 1.1rem;
       }
       svg {
         width: 1.2rem;
@@ -43,9 +45,20 @@
 
     .display-flex {
       align-items: center;
+
+      @media screen and(max-width:400px) {
+        flex-direction: column;
+      }
     }
     .logo-block {
       margin-right: 13rem;
+      @include respondto(phone) {
+        margin-right: 3rem;
+      }
+      @media screen and(max-width:400px) {
+        margin-bottom: 1.5rem;
+        margin-right: 0rem;
+      }
       svg {
         width: 15.1rem;
         height: 3rem;
@@ -55,6 +68,9 @@
     .search-block {
       max-width: 30%;
       width: 100%;
+      @include respondto(phone) {
+        max-width: 100%;
+      }
       svg {
         width: 2rem;
         height: 2rem;
@@ -72,34 +88,15 @@
         color: $black;
       }
     }
-
-    .features-header {
-      display: flex;
-      svg {
-        width: 2.9rem;
-        height: 2.9rem;
-      }
-      .icons-block {
-        svg {
-          margin-right: 4.7rem;
-        }
-      }
-      .sign-in {
-        svg {
-          margin-right: 2rem;
-        }
-        a {
-          color: $white;
-          @include font-weight(bold);
-        }
-      }
-    }
   }
 
   .nav-links-header {
     padding: 2.7rem 0rem;
     background-color: $white;
     nav {
+      @include respondto(maxTablet) {
+        display: none;
+      }
       ul {
         display: flex;
         gap: 1.5rem;
@@ -141,6 +138,70 @@
         svg {
           width: 2.7rem;
           height: 2.7rem;
+        }
+      }
+    }
+  }
+  .features-header {
+    display: flex;
+    svg {
+      width: 2.9rem;
+      height: 2.9rem;
+    }
+    .icons-block {
+      svg {
+        margin-right: 4.7rem;
+      }
+    }
+    .sign-in {
+      svg {
+        margin-right: 2rem;
+      }
+      a {
+        color: $white;
+        @include font-weight(bold);
+      }
+    }
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    @include respondto(onlyDesktop) {
+      display: none;
+    }
+
+    .burger-menu {
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .features-header {
+      align-items: center;
+
+      .icons-block {
+        a {
+          svg {
+            @include respondto(phone) {
+              margin-right: 2.7rem;
+            }
+          }
+        }
+      }
+
+      .sign-in {
+        a {
+          color: $black;
+          @include respondto(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            svg {
+              margin-right: 0;
+            }
+          }
         }
       }
     }

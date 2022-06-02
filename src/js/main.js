@@ -1,4 +1,5 @@
 @@include("partials/main.js");
+@@include("partials/header.js");
 
 //Tiras
 @@include("../widgets/homepage-hero-slider/homepage-hero-slider.js");

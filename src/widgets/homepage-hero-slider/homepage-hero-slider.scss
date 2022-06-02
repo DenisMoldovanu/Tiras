@@ -6,6 +6,9 @@
 
   img {
     margin-right: 14.9rem;
+    @include respondto(phone) {
+      margin-right: 0;
+    }
   }
   .container {
     position: relative;
@@ -13,6 +16,10 @@
     padding: 2rem 2.5rem 7.5rem 2.5rem;
     background-repeat: no-repeat;
     background-position: 13% 103%;
+    @include respondto(phone) {
+      padding: 2rem 0rem;
+      max-width: 100%;
+    }
   }
   .swiper-container {
     @include respondto(maxTablet) {
@@ -26,7 +33,18 @@
     }
   }
 
+  .display-flex {
+    @include respondto(phone) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
   .content-slider {
+    @include respondto(phone) {
+      margin-bottom: 10px;
+    }
+
     .text-block {
       p {
         font-size: 1.4rem;

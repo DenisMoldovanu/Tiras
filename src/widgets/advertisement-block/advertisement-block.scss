@@ -65,7 +65,7 @@
     border-radius: 5px;
     width: 100%;
     background-color: #f76945;
-    padding: 3.6rem 0rem 2rem;
+    padding: 3.6rem 2rem;
     text-align: center;
 
     @include respondto(phone) {
@@ -116,6 +116,7 @@
     position: relative;
     @include respondto(phone) {
       max-width: 100%;
+      padding: 1.6rem 1rem;
     }
 
     .secondary-block-img {
