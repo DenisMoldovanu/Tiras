@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-position: 13% 103%;
     @include respondto(phone) {
-      padding: 2rem 0rem;
+      padding: 2rem;
       max-width: 100%;
     }
   }
@@ -59,6 +59,9 @@
         line-height: normal;
         margin-bottom: 1.7rem;
         letter-spacing: 5.94px;
+        @include respondto(phone) {
+          font-size: 3rem;
+        }
         span {
           display: block;
         }
