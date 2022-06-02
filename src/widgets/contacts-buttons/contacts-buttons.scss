@@ -1,15 +1,8 @@
 .fixed-contact-buttons {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   bottom: 20rem;
   right: 4rem;
   z-index: 99;
-  align-items: center;
-
-  .overlay-btns {
-    margin-bottom: 15rem;
-  }
 
   .call-buttons {
     display: flex;
@@ -66,29 +59,14 @@
     border: solid 6px #fff;
     border-radius: 50%;
     text-align: center;
-    padding-top: 2rem;
-    svg {
-      width: 3.4rem;
-      height: 3.4rem;
-      fill: $black;
-    }
-
-    .hide-icon {
-      display: none;
-    }
-  }
-  .message-button {
-    cursor: pointer;
-    width: 9.2rem;
-    height: 9.2rem;
-    background-color: #fac859;
-    border: solid 6px #fff;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.6rem;
     svg {
       width: 4.8rem;
       height: 4.8rem;
+      fill: $black;
+    }
+    .hide-icon {
+      display: none;
     }
   }
 }
