@@ -46,6 +46,10 @@
       a {
         color: $black;
         font-size: 1.4rem;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
       }
     }
     .main-footer-socials {
