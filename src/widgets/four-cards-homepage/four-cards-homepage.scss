@@ -7,26 +7,6 @@
     height: unset;
   }
 
-  .container {
-    position: relative;
-  }
-  .background-white {
-    border-radius: 5px;
-    box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.05);
-    background-color: $white;
-    position: absolute;
-    @include respondto(maxTablet) {
-      position: unset;
-      margin-bottom: 2rem;
-    }
-
-    @include respondto(phone) {
-      flex-direction: column;
-      background: unset;
-      box-shadow: unset;
-    }
-  }
-
   .display-flex {
     @include respondto(phone) {
       flex-direction: column;
@@ -56,6 +36,13 @@
     span {
       font-size: 1.3rem;
       color: #747474;
+    }
+  }
+  .absolute-bottom {
+    @include respondto(phone) {
+      flex-direction: column;
+      background: unset;
+      box-shadow: unset;
     }
   }
 }

@@ -174,7 +174,36 @@ a {
 .body-page {
   background-color: #f7f7f7;
 }
+.absolute-top {
+  max-width: 1350px;
+  width: 100%;
+  position: absolute;
+  top: -6rem;
+  background-color: $white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  @include respondto(maxTablet) {
+    position: inherit;
+    top: unset;
+    padding-bottom: 1rem;
+    box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
 
+.absolute-bottom {
+  max-width: 1350px;
+  border-radius: 5px;
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.05);
+  background-color: $white;
+  position: absolute;
+  @include respondto(maxTablet) {
+    position: inherit;
+    margin-bottom: 2rem;
+  }
+}
+.position-relative {
+  position: relative;
+}
 // Safari browser only
 // @media not all and (min-resolution: 0.001dpcm) {
 //   @supports (-webkit-appearance: none) {
